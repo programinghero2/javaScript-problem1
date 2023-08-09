@@ -3,8 +3,8 @@ function matchFinder(string1, string2) {
         return "Please provide me a String";
     }
     else{
-        return string1.toLowerCase().includes(string2.toLowerCase());
+        return string1.includes(string2);
     }
 }
-console.log(matchFinder("John Doe","ohn"));
+
 

@@ -1,15 +1,9 @@
-function findAddress(obj) {
+function findAddress(obj){
     if (typeof obj !== 'object') {
         return "Please provide a object";
     }
-    const firstProperty = obj.street || "_";
-    const secondProperty = obj.house || "_";
-    const thirdProperty = obj.society || "_";
+    const firstProperty = obj.street || "__";
+    const secondProperty = obj.house || "__";
+    const thirdProperty = obj.society || "__";
     return firstProperty +","+ secondProperty + ","+ thirdProperty;
 }
-const obj = {
-    street: 10,
-    house: "15A",
-    society: "Earth Perfect"
-}
-console.log(findAddress(obj));

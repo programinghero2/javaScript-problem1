@@ -1,6 +1,6 @@
 function canPay(changeArray, totalDue) {
     if(changeArray.length == 0){
-        return "please enter number in array";
+        return "Your array is empty.Please provide me number in array";
     }
     let changeArraySum = 0;
     for (const element of changeArray) {
@@ -11,4 +11,4 @@ function canPay(changeArray, totalDue) {
     }
     return false;
 }
-console.log(canPay([1,2,5], 10))
+
